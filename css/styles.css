@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+:root {
+  --bg-gray: #ddd;
+  --color-primary: #4d41c0;
+  --white: #fff;
+  --text-gray: #4a4a4a;
+  --text-light-gray: #aaa;
+  --star-yellow: #ffbb3a;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html,
+body {
+  background-color: var(--bg-gray);
+}
+
+header {
+  background-color: var(--color-primary);
+  color: var(--white);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav a {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+.movieswebsite-contact-container {
+  display: flex;
+  align-items: center;
+}
+
+.movieswebsite-contact-container img {
+  margin-right: 10px;
+}
+
+#movieswebsite-card-list {
+  padding: 0 10px;
+}
+
+.movieswebsite-card {
+  width: 100%;
+}
+
+.movieswebsite-card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.movieswebsite-card-description {
+  background-color: var(--white);
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 8px 8px;
+  height: 200px;
+}
+
+.movieswebsite-card-description h3 {
+  font-size: 14px;
+  font-weight: 700px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.movieswebsite-card-description-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.movieswebsite-card-description-bottom img {
+  width: 22px;
+}
+
+.movieswebsite-card-description-bottom h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--star-yellow);
+}
+
+.movieswebsite-card-description-bottom p {
+  font-size: 12px;
+  font-weight: 400px;
+  color: var(--text-light-gray);
+  margin-bottom: 10px;
+}
+
+.movieswebsite-btn,
+.movieswebsite-btn:hover {
+  width: 180px;
+  height: 40px;
+  background-color: var(--color-primary);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 0;
+}
+
+.movieswebsite-form-container {
+  padding: 40px 0;
+  max-width: 480px;
+}
+
+.movieswebsite-form-description {
+  background-color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.movieswebsite-form-description h3 {
+  font-size: 13px;
+  font-weight: 700px;
+  margin-bottom: 20px;
+}
+
+.movieswebsite-form {
+  width: 100%;
+}
+
+.movieswebsite-form-group {
+  margin-bottom: 20px;
+}
+
+.movieswebsite-form-group label {
+  font-size: 12px;
+  color: var(--text-light-gray);
+}
+
+.movieswebsite-form-btn-container {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movieswebsite-pagination-container {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.movieswebsite-pagination-box {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movieswebsite-pagination-box p {
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-primary);
+  font-weight: 400px;
+}
+
+.movieswebsite-pagination-box button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movieswebsite-pagination-box button img {
+  filter: invert(22%) sepia(29%) saturate(5247%) hue-rotate(235deg)
+    brightness(101%) contrast(89%);
+}
+
+.movieswebsite-pagination-box button:disabled {
+  border: 1px solid var(--text-light-gray);
+}
+
+.movieswebsite-pagination-box button:disabled img {
+  filter: unset;
+}
+
+.movieswebsite-flip-horizontal {
+  transform: rotate(180deg);
+}
